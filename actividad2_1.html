@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="David Campos Morado" content="Universidad Politecnica">
+        <title>Formulario</title>
+    </head>
+    <body>
+        <center><h1>Venta en linea</h1></center>
+        <form method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Información general</legend>
+                <center>
+                    <table >
+                        <tbody>
+                        <tr>
+                            <td>
+                                <label for="nombre">Nombre</label></br>
+                                <input required type="text" name="nombre" id="nombre" title="Nombre" placeholder="Nombre" ></input></br>
+                            </td>
+                            <td>
+                            
+                                <label for="apellidop">Apellido Paterno</label></br>
+                                <input required type="text" name="apellidop" id="apellidop"  title="Apellidom" placeholder="Apellido Paterno" ></input>
+                            </td>
+                            <td>
+                                <label for="apellidop">Apellido Materno</label></br>
+                                <input required type="text" name="apellidom" id="apellidom" title="Apellidom" placeholder="Apellido Materno" ></input>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                <label for="nombreu">Nombre De Usuario</label></br>
+                                <input required type="text" name="nombre" id="nombre" title="Nombre" placeholder="Usuario"></input></br>
+                            </td>
+                            <td>
+                                <label for="contra">Contraseña</label></br>
+                                <input required type="text" name="contra" id="contra" title="contra" placeholder="Password"></input></br>
+                            </td>
+                            <td>
+                                <label for="fecha">Fecha De Nacimiento</label></br>
+                                <input required type="date" name="fecha" id="fecha" ></input></br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </center>
+        </fieldset>
+            <fieldset>
+            <legend>Datos de facturación</legend>
+                <center>
+                    <table >
+                        <tbody>
+                        <tr>
+                            <td>
+                                <label for="Pais">Pais</label>
+                                </br>
+                                <select name=Pais>
+                                <optgroup>
+                                <option>CANADA</option>
+                                <option>E.U.A</option>
+                                <option>MEXICO</option>
+                                <option>EUROPA</option>
+                                </optgroup>
+                                </select>
+            
+                            </td>
+                            <td>
+                            
+                                <label for="ciudad">Ciudad</label></br>
+                                <select name=ciudad>
+                                <optgroup>
+                                <option>SAN LUIS POTOSI</option>
+                                <option>MATEHUALA</option>
+                                <option>CD. VALLES</option>
+                                <option>GUANAJUATO</option>
+                                </optgroup>
+                                </select>
+                            </td>
+                            <td>
+                                <label for="calle">Calle</label></br>
+                                <input required type="text" name="Calle" id="Calle" title="Calle" placeholder="Calle"></input>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                <label for="num">Numero de casa</label></br>
+                                <input required type="text" name="Número exterior" id="Número exterior" title="Número exterior" placeholder="Número exterior"></input></br>
+                            </td>
+                            <td>
+                                <label for="colonia">Colonia</label></br>
+                                <input required type="text" name="Colonia" id="Colonia" title="Colonia" placeholder="Colonia"></input></br>
+                            </td>
+                            <td>
+                                <label for="email">Email</label></br>
+                                <input required stype="email" id="email" name="email" title="email" placeholder="E-mail" ></br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="rfc">R.F.C</label></br>
+                                <input required type="text" name="R.F.C" id="R.F.C" title="R.F.C" placeholder="R.F.C"></input></br>
+                            </td>
+                            <td>
+                                <label for="cp">C.P.</label></br>
+                                <input required type="text" name="Codigo Postal" id="Codigo Postal" title="Codigo Postal" placeholder="Codigo Postal"></input></br>
+                            </td>
+                            <td>
+            
+                            <input name="boton" type="submit" value="Enviar">
+                            <input name="boton" type="submit" value="Restablecer">
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </center>
+            </fieldset>
+    </form>
+    </body>
+</html>
