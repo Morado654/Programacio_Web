@@ -1,0 +1,41 @@
+@font-face{
+    font-family: fuente1;
+    src: url(Chakra_Petch/ChakraPetch-Medium.ttf);
+}
+body{
+    font-family: fuente1;
+    border: 5px solid;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+#contenedor{
+    width: 100%;
+    margin: 15px auto;
+}
+#cont{
+    padding: 10px;
+    width: 70%;
+    margin: 10px auto 10px auto;
+}
+input{
+    width: 90%;
+}
+#envio{
+    background-color: rgb(28, 164, 218);
+    border: 5px solid;
+    border-color:rgb(28, 164, 218);
+    text-align: center;
+    border-radius: 50px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+.text{
+    height: 30px;
+
+}
+#envio{
+    color: white;
+    border-radius: 0%;
+    height: 40px;
+}
