@@ -1,0 +1,111 @@
+@font-face {
+    font-family: fuente;
+    src: url(Bungee_Spice/BungeeSpice-Regular.ttf);
+}
+@font-face {
+    font-family: fuente1;
+    src: url(Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: fuente3;
+    src: url(Grenze_Gotisch/GrenzeGotisch-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: fuente4;
+    src: url(Jim_Nightshade/JimNightshade-Regular.ttf);
+}
+#logo{
+
+    font-family: fuente;
+    font-size: 40px;
+    margin: 0;
+}
+p{
+    font-family: fuente1;
+    font-size: 20px;
+    padding-right: 35%;
+}
+ul { 
+    font-family: fuente4  ;
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 10px 10px;
+    color: white;
+    margin-top: 2em;
+    font-size: 20px;
+}
+a,.menu{
+    margin: 0;
+    margin-right: 30px;
+    text-decoration: none;  
+    text-align: center; 
+    width: 170px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: rgb(108, 247, 15);
+    color: rgb(12, 49, 159);
+    font-size: 25px;
+}
+a,.menu:hover {
+    margin: 8;
+    margin-right: 30px;     
+    text-decoration: none; 
+    display: inline-block; 
+    text-align: center; 
+    width: 170px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: rgb(162, 237, 113);
+    color: white;
+}
+#der {
+    width: 250px;
+    margin-left: auto;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+*{
+    margin: 50px 40px 50px 50px;
+}
+section{
+    display: flex; 
+}
+input {
+    font-size: 1em;
+    padding: 1em;
+    border: solid  black 2px; 
+    width: 10em;
+    margin-top: 10px;
+}   
+input[type="submit"] {
+    font-size: 15px;
+    width: 195px;
+    height: 60px;
+    background-color: rgb(255, 87, 87); 
+    border:none;
+}
+input[type="title"] {
+    font-size: 15px;
+    width: 170px;
+    height: 30px;
+    background-color: rgb(255, 0, 0); 
+    border:none;
+    text-align: center;
+}
+footer {
+    font-family: fuente3;
+    font-size: 30px;
+    margin: 50px 50px 0px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    background-color: rgb(28, 225, 104);
+    padding: 20px;
+    text-align: center;
+ } 

@@ -1,0 +1,60 @@
+/* Estilos para el formulario */
+#der {
+    width: 250px;
+    margin-left: auto;
+    margin-bottom: 35px;
+    float: right; /* Alinear el formulario a la derecha */
+}
+
+/* Estilos para el contenido del artículo */
+article {
+    float: left; /* Alinear el contenido del artículo a la izquierda */
+    width: calc(100% - 270px); /* Calcular el ancho para dejar espacio al formulario */
+    padding-right: 20px; /* Espacio entre el contenido y el formulario */
+}
+
+/* Estilos para el título del aside */
+#der h1 {
+    font-family: fuente1; /* Usar la fuente definida */
+    font-size: 25px; /* Tamaño de fuente */
+    width: 230px; /* Ancho del título */
+    height: 80px; /* Altura del título */
+    line-height: 80px; /* Alineación vertical del texto */
+    text-align: center; /* Alineación horizontal del texto */
+    border-radius: 5px; /* Borde redondeado */
+    background-color: rgb(227, 25, 25); /* Color de fondo */
+}
+
+/* Estilos para el formulario dentro del aside */
+#der form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinear los elementos del formulario a la derecha */
+}
+
+/* Estilos para los campos de entrada */
+#der input[type="text"],
+#der input[type="password"],
+#der input[type="submit"] {
+    font-family: fuente1; /* Usar la fuente definida */
+    font-size: 20px; /* Tamaño de fuente */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espacio inferior */
+    border: solid black 2px; /* Borde sólido de 2px de color negro */
+    border-radius: 5px; /* Borde redondeado */
+    width: 230px; /* Ancho de los campos de entrada */
+}
+
+/* Estilos para el botón de envío */
+#der input[type="submit"] {
+    background-color: rgb(255, 87, 87); /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor al pasar sobre él */
+    height: 85px; /* Altura del botón */
+}
+
+/* Cambio de estilo al pasar sobre el botón de envío */
+#der input[type="submit"]:hover {
+    background-color: rgb(200, 30, 30); /* Color de fondo al pasar el ratón */
+}
