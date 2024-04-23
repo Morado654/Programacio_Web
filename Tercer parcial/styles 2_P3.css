@@ -1,0 +1,41 @@
+h3 {
+    color: #505050; /* Color del texto */
+}
+
+input[type="text"] {
+    width: 98%; /* Ancho casi completo */
+    padding: 15px; /* Espacio interno más grande */
+    margin-bottom: 20px; /* Espacio inferior más grande */
+    border: 2px solid #2ce429; /* Borde más grueso */
+    border-radius: 8px; /* Borde redondeado */
+}
+
+input[type="submit"] {
+    width: 100.5%;
+    padding: 15px 25px; /* Espacio interno más grande */
+    background-color: #092a9f; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Borde redondeado */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+input[type="submit"]:hover {
+    background-color: #5f51dc; /* Color de fondo al pasar el cursor */
+}
+
+#resultado {
+    text-align: center; /* Centra el texto */
+    margin-top: 40px; /* Espacio superior */
+}
+
+p {
+    background-color: #d3d3d3; /* Fondo gris más claro */
+    padding: 20px; /* Espacio interno */
+}
+
+#formu {
+    background-color: #f0f0f0; /* Fondo gris más claro */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Borde redondeado */
+}
