@@ -1,0 +1,35 @@
+#a{
+    height: 150px;
+    height: 50px;
+    border: 5px solid #2855b8;
+    text-align: center;
+    border-radius: 10px;
+    background: radial-gradient(center,circle,#7139c6a8 ,hsl(175, 87%, 52%)) ;
+    background: -moz-radial-gradient(center,circle,#7139c6a8 ,hsl(175, 87%, 52%)) ;
+    background: -webkit-radial-gradient(center,circle,#7139c6a8 ,hsl(175, 87%, 52%)) ;
+}
+#a:hover{
+    height: 150px;
+    height: 50px;
+    transform: skewX(-10deg);
+    border: 5px solid #ffffffa8;
+    text-align: center;
+    border-radius: 10px;
+    background: radial-gradient(center,circle,#28e26ca8 ,hsl(41, 84%, 42%)) ;
+    background: -moz-radial-gradient(center,circle,#28e26ca8 ,hsl(41, 84%, 42%)) ;
+    background: -webkit-radial-gradient(center,circle,#28e26ca8 ,hsl(41, 84%, 42%)) ;
+}
+#a:active{
+    height: 150px;
+    height: 50px;
+    transform: skewX(-10deg);
+    border: 5px solid #c10e7ca8;
+    text-align: center;
+    border-radius: 10px;
+    background: radial-gradient(center,circle,#cc08c6a8 ,hsl(355, 92%, 45%)) ;
+    background: -moz-radial-gradient(center,circle,#cc08c6a8 ,hsl(355, 92%, 45%)) ;
+    background: -webkit-radial-gradient(center,circle,#cc08c6a8 ,hsl(355, 92%, 45%)) ;
+    box-shadow: 10px 10px 20px black;
+    -moz-box-shadow: 10px 10px 20px black;
+    -webkit-box-shadow: 10px 10px 20px black;
+}
