@@ -1,7 +1,38 @@
-#titulo{
+@font-face {
+    font-family: fuente;
+    src: url(Cormorant_Garamond/CormorantGaramond-Italic.ttf);
+}
+h3{
     text-align: center;
 }
 input{
-    width: 100%;
+    width: 95%;
     height: 30px;
+    text-align: center;
+}
+input[type="button"] {
+    background-color: rgb(139, 242, 208);
+    color: rgb(224, 45, 22);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 30%;
+}
+input[type="button"]:hover {
+    background-color: #237bda;
+    color: black;
+}
+#formu{
+    text-align: center;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+body{
+    background-color: rgb(199, 205, 205);
+    font-family: fuente;
+    font-size: 20px;
 }
