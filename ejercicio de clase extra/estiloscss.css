@@ -1,0 +1,41 @@
+.carrousel {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.contenido {
+    display: flex;
+}
+
+.contenido img {
+    width: 100%;
+    display: none; /* Oculta todas las imágenes por defecto */
+}
+
+.contenido img.active {
+    display: block; /* Solo muestra la imagen activa */
+}
+
+button {
+    position: absolute;
+    top: 45%;
+    background-color: rgb(73, 211, 73);
+    color: aqua;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+#previo {
+    left: 0px;
+}
+
+#siguiente {
+    right: 0px;
+}
