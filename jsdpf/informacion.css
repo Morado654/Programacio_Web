@@ -1,0 +1,70 @@
+@font-face {
+    font-family: fuente;
+    src: url(Briem_Hand/BriemHand-VariableFont_wght.ttf);
+}
+
+
+nav {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    font-size: 20px;
+    display: inline-block;
+    padding: 15px;
+    color: transparent; /* Hacemos el color del texto transparente */
+    background-image: linear-gradient(to right, rgb(56, 89, 186), rgb(123, 175, 223));  /* Difuminado de morado a azul */
+    -webkit-background-clip: text; /* Para aplicar el degradado solo al texto en navegadores webkit */
+    background-clip: text; /* Aplicamos el degradado solo al texto */
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+nav a:hover {
+    transform: scale(2);
+    color: #93cef3;
+}
+
+/* informacion.css */
+
+body {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente según desees */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #001aff, #1f8cec, #3fcaf5, #44e3db); /* Fondo degradado */
+    background-size: 400% 400%; /* Tamaño del fondo */
+    animation: gradientMove 10s ease infinite; /* Animación del movimiento */
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+Section {
+    padding: 50px;
+    text-align: center;
+    margin-top: 100px; /* Para dar espacio al contenido debajo de la barra de navegación */
+    color: #ddc6e3; /* Cambia el color del texto principal */
+}
+
+
+
+ul {
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
