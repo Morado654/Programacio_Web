@@ -61,3 +61,57 @@ body {
     background-position: center;
     color: rgb(255, 255, 255);
 }
+
+#avances{
+    background-color: black;
+    position: relative;
+}
+
+#avances2{
+    background-color: blue;
+    width: 500px;
+    position: relative;
+}
+
+#fabricacion{
+    background-color: blue;
+    width: 500px;
+    position: absolute;
+    right: 16px;
+    top: 750px;
+}
+
+#salud{
+    background-color: blue;
+    width: 500px;
+    position: absolute;
+    right: 16px;
+    top: 1400px; 
+}
+
+#ciudades{
+    background-color: blue;
+    width: 500px;
+    position: relative;
+    top: 450px;
+}
+
+#aronautica{
+   background-color: blue;
+    width: 500px;
+    position: absolute;
+    left: 500px;
+    top: 1000px;
+}
+
+#Conceptos{
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    top: 500px;
+}
+
+footer{
+    position: relative;
+    top: 500px;
+    background-color: black;
+}

@@ -58,3 +58,42 @@ p {
     text-align: justify; /* Justifica el texto */
     text-align: center;
 }
+
+#eficiencia{
+    background-color: white;
+    width: 500px;
+    position: relative;
+    left: 15px;
+}
+#nuevos{
+    background-color: white;
+    width: 500px;
+    position: absolute;
+    top: 200px;
+    right: 16px;
+}
+#inovacion{
+    background-color: white;
+    width: 500px;
+    position: relative;
+    left: 500px;
+    top: 20px;
+}
+#desarrollo{
+    background-color: white;
+    width: 500px;
+    position: relative;
+    left: 16px;
+    top: 20px;
+}
+#relatos{
+    background-color: white;
+    width: 500px;
+    position: absolute;
+    top: 630px;
+    right: 16px;
+}
+footer{
+    background-color: black;
+    color: white;
+}

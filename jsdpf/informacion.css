@@ -68,3 +68,59 @@ ul {
     margin-top: 20px;
 }
 
+footer{
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 50px;
+}
+#bases{
+    width: 500px;
+    background-color: pink;
+    position: relative;
+    left: 10px;
+    color: black;
+}
+#beneficios{
+    width: 500px;
+    background-color: pink;
+    position: absolute;
+    right: 50px;
+    top: 370px;
+    color: black;
+}
+#desafios{
+    width: 500px;
+    background-color: pink;
+    position: relative;
+    left: 450px;
+    top: 50px;
+    color: black;
+}
+#historia{
+    position: relative;
+    top: 50px;
+    color: black;
+    background-color: pink;
+}
+
+#objetivo{
+    width: 500px;
+    background-color: pink;
+    position: relative;
+    left: 10px;
+    color: black;
+    top: 50px;
+}
+#objetivos2{
+    width: 500px;
+    background-color: pink;
+    position: absolute;
+    right: 50px;
+    top: 1585px;
+    color: black;
+}
+#titulo{
+    color: black;
+    background-color: pink;
+}

@@ -1,4 +1,13 @@
-
+body{
+    background-image: url(Imagenesproyecto/gemelos\ digitales.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul{
+    background-color: rgb(24, 23, 23);
+    color: white;
+}
 nav {
     background-color: rgb(0, 0, 0);
     text-align: center;
@@ -7,7 +16,14 @@ nav {
     top: 0;
     z-index: 1000;
 }
-
+#titulo{
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
+footer{
+    background-color: white;
+}
 nav a {
     font-size: 20px;
     display: inline-block;

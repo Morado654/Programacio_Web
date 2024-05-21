@@ -3,8 +3,46 @@ body {
     margin: 0;
     padding: 0;
     color: rgb(0, 0, 0);
+    background-image: url(Imagenesproyecto/dos\ manos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 
+#cuadro1{
+    width: 500px;
+    background-color: black;
+    position: relative;
+    left: 150px;
+    border-radius: 5px;
+}
+#cuadro2{
+    width: 500px;
+    background-color: black;
+    position: absolute;
+    top: 80px;
+    right: 150px;
+    border-radius: 5px;
+}
+#cuadro3{
+    width: 500px;
+    background-color: black;
+    position: relative;
+    left: 500px;
+    border-radius: 5px;
+}
+#cuadro4{
+    background-color: rgb(43, 63, 180);
+    border-radius: 5px;
+}
+
+#titulo{
+    top: 200px;
+}
+footer{
+    color: white;
+    background-color: black;
+}
 nav {
     background-color: rgb(0, 0, 0);
     text-align: center;
@@ -13,7 +51,23 @@ nav {
     top: 0;
     z-index: 1000;
 }
-
+#youtube{
+    padding: 20px;
+    background-color: red;
+}
+#blog{
+    padding: 20px;
+    background-color: aqua;
+}
+#twitter{
+    padding: 20px;
+    background-color: black;
+}
+#facebook{
+    padding: 20px;
+    background-color: blue;
+    color: white;
+}
 nav a {
     font-size: 20px;
     display: inline-block;
