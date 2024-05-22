@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <title>Examen</title>
-    <link rel="stylesheet" type="text/css" href="Examen P3.css">
-    <script type="text/javascript" src="Examen P3.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palíndromo</title>
+    <link rel="stylesheet" href="examen.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Comprobador de Palíndromos</h1>
-        <form id="palindromoForm">
-            <label for="frase">Introduce una frase:</label>
-            <input type="text" id="frase" name="frase" required>
-            <button type="button" onclick="comprobarPalindromo()">Comprobar</button>
-        </form>
-        <p id="resultado"></p>
-    </div>
+    <h1>Sera un palindromo?</h1>
+    <input type="text" id="frase" placeholder="Ingresa una frase">
+    <button onclick="evaluarPalindromo()">Evaluar</button>
+    <p id="resultado"></p>
+    <script src="examen.js"></script>
 </body>
 </html>
