@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente según desees */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #001aff, #1f8cec, #3fcaf5, #44e3db); /* Fondo degradado */
+    background-size: 400% 400%; /* Tamaño del fondo */
+    animation: gradientMove 10s ease infinite; /* Animación del movimiento */
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    font-size: 20px;
+    display: inline-block;
+    padding: 15px;
+    color: transparent; /* Hacemos el color del texto transparente */
+    background-image: linear-gradient(to right, rgb(56, 89, 186), rgb(123, 175, 223));  /* Difuminado de morado a azul */
+    -webkit-background-clip: text; /* Para aplicar el degradado solo al texto en navegadores webkit */
+    background-clip: text; /* Aplicamos el degradado solo al texto */
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+nav a:hover {
+    transform: scale(2);
+    color: #93cef3;
+}
+
+h1, h2, h3 {
+    color: #1565c0;
+    text-align: center; /* Centra los títulos */
+}
+
+a {
+    color: #3fef66;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8bd634;
+}
+
+section {
+    margin-bottom: 20px;
+    text-align: center; /* Centra los elementos de las secciones */
+    margin-top: 100px; /* Para dar espacio al contenido debajo de la barra de navegación */
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify; /* Justifica el texto */
+    text-align: center;
+}
+
+#eficiencia{
+    background-color: white;
+    width: 500px;
+    position: relative;
+    left: 15px;
+}
+#nuevos{
+    background-color: white;
+    width: 500px;
+    position: absolute;
+    top: 200px;
+    right: 16px;
+}
+#inovacion{
+    background-color: white;
+    width: 500px;
+    position: relative;
+    left: 500px;
+    top: 20px;
+}
+#desarrollo{
+    background-color: white;
+    width: 500px;
+    position: relative;
+    left: 16px;
+    top: 20px;
+}
+#relatos{
+    background-color: white;
+    width: 500px;
+    position: absolute;
+    top: 630px;
+    right: 16px;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+footer{
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 50px;
+}

@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente según desees */
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    background-image: url(Imagenesproyecto/dos\ manos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#cuadro1{
+    width: 500px;
+    background-color: black;
+    position: relative;
+    left: 150px;
+    border-radius: 5px;
+}
+#cuadro2{
+    width: 500px;
+    background-color: black;
+    position: absolute;
+    top: 80px;
+    right: 150px;
+    border-radius: 5px;
+}
+#cuadro3{
+    width: 500px;
+    background-color: black;
+    position: relative;
+    left: 500px;
+    border-radius: 5px;
+}
+#cuadro4{
+    background-color: rgb(43, 63, 180);
+    border-radius: 5px;
+}
+
+#titulo{
+    top: 200px;
+}
+footer{
+    color: white;
+    background-color: black;
+}
+nav {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+#youtube{
+    padding: 20px;
+    background-color: rgb(60, 213, 144);
+}
+#blog{
+    padding: 20px;
+    background-color: aqua;
+}
+#twitter{
+    padding: 20px;
+    background-color: black;
+}
+#facebook{
+    padding: 20px;
+    background-color: blue;
+    color: white;
+}
+nav a {
+    font-size: 20px;
+    display: inline-block;
+    padding: 15px;
+    color: transparent; /* Hacemos el color del texto transparente */
+    background-image: linear-gradient(to right, rgb(56, 89, 186), rgb(123, 175, 223));  /* Difuminado de morado a azul */
+    -webkit-background-clip: text; /* Para aplicar el degradado solo al texto en navegadores webkit */
+    background-clip: text; /* Aplicamos el degradado solo al texto */
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+nav a:hover {
+    transform: scale(2);
+    color: #93cef3;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    text-align: center;
+}
+Section {
+    margin-top: 100px; /* Para dar espacio al contenido debajo de la barra de navegación */
+}
+#cuadro2{
+    margin-top: 100px; /* Para dar espacio al contenido debajo de la barra de navegación */
+}

@@ -1,0 +1,45 @@
+body {
+    background-color: #2ce971; /* Color de fondo */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+
+
+ul {
+    list-style: none; /* Elimina los puntos de lista */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+
+ul li {
+    margin: 20px; /* Margen entre cada video */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra en relieve */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: aquamarine;
+}
+
+
+nav {
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    font-size: 20px;
+    display: inline-block;
+    padding: 15px;
+    color: transparent; /* Hacemos el color del texto transparente */
+    background-image: linear-gradient(to right, rgb(56, 89, 186), rgb(123, 175, 223));  /* Difuminado de morado a azul */
+    -webkit-background-clip: text; /* Para aplicar el degradado solo al texto en navegadores webkit */
+    background-clip: text; /* Aplicamos el degradado solo al texto */
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+nav a:hover {
+    transform: scale(2);
+    color: #93cef3;
+}

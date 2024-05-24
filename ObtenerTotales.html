@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obtener totales del formulario</title>
+    <link rel="stylesheet" href="ObtenerTotales.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="jspdf.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.addimage.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.split_text_to_size.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.from_html.js"></script>	
+	<link rel="stylesheet" href="ObtenerTotales.css">
+</head>
+<script>
+var total;
+function califica()
+    {var total=0;
+    	//Evalua cada pregunta
+    	for (var x=1;x<=10;x++)
+    	{
+        var res=0;
+        var nom="r"+x;
+        var resul=document.getElementsByName(nom);
+        for(var i=0;i<resul.length;i++)
+        {
+            if(resul[i].checked==true)
+                res=parseInt(resul[i].value);
+        }
+        total=total+res;
+        document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+        }
+        if(total>=9)
+        	document.getElementById("comentario").innerHTML="Le felicitamos por tener un buen rendimiento y tener una buena calificacion ya que se demostro al tener una buena califiacion";
+        else
+        	if(total>=6)
+        	document.getElementById("comentario").innerHTML="Contiene una buena califiacion pero le recomendariamos tender un poco mas de estudio y mejorar ya que puede contener una mejor calificacion y subir de rango con el cuestionario";
+        else
+        	if(total<=5)
+        	document.getElementById("comentario").innerHTML="Debido a su poca lectura y recordar en este examen se demostro que reprobo y necesita un pococ mas de investigas y aprender le recomendamos videos que tenemos y ademas porfavor que estudie un poco mas para que tenga una mejor calificacion";
+    }
+
+function generar(){
+
+//Crear un objeto o instancia jsPDF
+var doc = new jsPDF();
+
+//Definir el tamaño de la letra
+doc.setFontSize(40);
+//Color del texto
+doc.setTextColor(9,7,121);
+doc.text(40, 20, "Gemelos digitales y convergencia digital");
+doc.setTextColor(17, 122, 209); //Color en formato RGB
+doc.setFontSize(30);
+doc.text(50, 35, "Preguntas y respuestas"); //Ubicación, Texto
+doc.setTextColor(0,0,0);
+doc.setFontSize(10);
+doc.text(20, 50, "1)¿Cuál es un impacto de la convergencia digital en la sociedad?");
+doc.text(20, 55, "Democratización del acceso a la información");
+
+doc.text(20, 70, "2)¿Cuál es un impacto de la convergencia digital en la sociedad?");
+doc.text(20, 75, "Modelos virtuales en tiempo real de objetos físicos, procesos o sistemas.");
+
+doc.text(20, 90, "3)¿Cuál es un impacto de los gemelos digitales en la sociedad?");
+doc.text(20, 95, "Mejora en la eficiencia en diversos sectores.");
+
+doc.text(20, 110, "4)¿Qué fuente de información se centra específicamente en promover la adopción de gemelos digitales en diversas industrias?");
+doc.text(20, 115, "Digital Twins Consortium.");
+
+doc.text(20, 130, "5)¿Qué tipo de información proporciona Forrester Research?");
+doc.text(20, 135, "Información valiosa sobre los últimos desarrollos y casos de uso de gemelos digitales en diversas industrias.");
+
+doc.text(20, 150, "6)¿Cuál es el objetivo principal de la convergencia digital?");
+doc.text(20, 155, "Unificar las tecnologías de la información y la comunicación (TIC) para eliminar barreras y mejorar la experiencia del usuario.");
+
+doc.text(20, 170, "7)¿Cuál fue un desarrollo clave durante la década de 1990 que contribuyó a la convergencia digital?");
+doc.text(20, 175, "El lanzamiento de la World Wide Web y la explosión de Internet.");
+
+doc.text(20, 190, "8)¿Cuál es uno de los beneficios de los gemelos digitales?");
+doc.text(20, 195, "Monitorización y análisis del comportamiento de objetos físicos en tiempo real.");
+
+doc.text(20, 210,"9)¿Cuál fue una innovación tecnológica clave durante la primera década del siglo XXI que aceleró la convergencia digital?");
+doc.text(20, 215, "La proliferación de dispositivos móviles y tecnologías inalámbricas como el Wi-Fi y el Bluetooth.");
+
+doc.text(20, 230, "10)¿Cuál es uno de los objetivos de los gemelos digitales?");
+doc.text(20, 235, "Mejorar la toma de decisiones y la planificación estratégica mediante la simulación de escenarios y el análisis de variables.");
+//doc.addImage(imgData, 'JPEG', 10, 40, 180, 180);	
+
+var string = doc.output('datauristring');
+
+$('iframe').attr('src', string);
+
+}
+</script>
+
+<body>
+	<nav>
+        <a href="Pagprincipal.html" class="" >Pagina pricipal</a>
+		<a href="informacion.html" class="" >Informacion</a>
+		<a href="impacto.html" class="">Impacto</a>
+		<a href="Situacion actual.html" class="">Situcacion actual </a>
+		<a href="Visionafuturo.html" class="">Vision a futuro</a>
+        <a href="Visionafuturo.html" class="">Vision a futuro</a>
+        <a href="videos.html" class="">Videos</a>
+        <a href="storage2.html" class="">Interaccion</a>
+        <a href="memes.html" class="">Momasos</a>
+        <a href="Preguntasfrecuentes.html" class="">Ayuda</a>
+		<a href="storage2.html">inicio</a>
+        <a href="ObtenerTotales.html">Cuestionario</a>
+    </nav>
+	<section>
+		<div id="contiene">
+			<div id="titulo">
+			<h1>Responde el test</h1>
+			<h2>Evalua tu conocimiento</h2>
+			</div>
+			<form>
+			<ul>
+				<!-- Pregunta 1 -->
+				<li>¿Cuál es un impacto de la convergencia digital en la sociedad?</li><br>
+				<input type="radio" name="r1" id="r1" value="0"/>Reducción de las oportunidades de empleo.<br/><br>
+				<input type="radio" name="r1" id="r1" value="0"/>Limitación en la comunicación global.<br/><br>
+				<input type="radio" name="r1" id="r1" value="1"/>Democratización del acceso a la información.<br/><br>
+				<input type="radio" name="r1" id="r1" value="0"/>Aumento de la ineficiencia en las industrias.<br/><br><br>
+				<!-- Preegunta 2 --> 
+				<li>¿Qué son los gemelos digitales?</li><br>
+				<input type="radio" name="r2" id="r2" value="0"/>Representaciones físicas de objetos en el mundo real.<br/><br>
+				<input type="radio" name="r2" id="r2" value="1"/>Modelos virtuales en tiempo real de objetos físicos, procesos o sistemas.<br/><br>
+				<input type="radio" name="r2" id="r2" value="0"/>Herramientas de comunicación tradicionales.<br/><br>
+				<input type="radio" name="r2" id="r2" value="0"/>Dispositivos de entretenimiento digital.<br/><br><br>
+				<!-- Pregunta 3 -->
+				<li>¿Cuál es un impacto de los gemelos digitales en la sociedad?</li><br>
+				<input type="radio" name="r3" id="r3" value="0"/>Aumento de la ineficiencia en la gestión de recursos.<br/><br>
+				<input type="radio" name="r3" id="r3" value="0"/>Reducción de la innovación en el campo de la medicina.<br/><br>
+				<input type="radio" name="r3" id="r3" value="1"/>Mejora en la eficiencia en diversos sectores. <br/><br>
+				<input type="radio" name="r3" id="r3" value="0"/>Desarrollo de ciudades menos inteligentes.<br/><br><br>
+				<!-- Pregunta 4 -->
+				<li>¿Qué fuente de información se centra específicamente en promover la adopción de gemelos digitales en diversas industrias?</li><br>
+				<input type="radio" name="r4" id="r4" value="0"/>IEEE Spectrum.<br/><br>
+				<input type="radio" name="r4" id="r4" value="0"/>Harvard Business Review.<br/><br>
+				<input type="radio" name="r4" id="r4" value="0"/>Forrester Research.<br/><br>
+				<input type="radio" name="r4" id="r4" value="1"/>Digital Twins Consortium. <br/><br><br>
+				<!-- Pregunta 5 -->
+				<li>¿Qué tipo de información proporciona Forrester Research?</li><br>
+				<input type="radio" name="r5" id="r5" value="0"/>Artículos y análisis sobre cómo la tecnología está transformando los negocios y la sociedad.<br/><br>
+				<input type="radio" name="r5" id="r5" value="0"/>Informes sobre tendencias tecnológicas emergentes, incluidos los gemelos digitales y la convergencia digital.<br/><br>
+				<input type="radio" name="r5" id="r5" value="0"/>Informes y análisis sobre tecnología, incluyendo temas relacionados con la convergencia digital y los gemelos digitales.Forrester Research.<br/><br>
+				<input type="radio" name="r5" id="r5" value="1"/>Información valiosa sobre los últimos desarrollos y casos de uso de gemelos digitales en diversas industrias. <br/><br>
+				<input type="radio" name="r5" id="r5" value="0"/>Todas las anteriores.<br/><br><br>
+				<!-- Pregunta 6 -->
+				<li>¿Cuál es el objetivo principal de la convergencia digital?</li><br>
+				<input type="radio" name="r6" id="r6" value="0"/> Incrementar la brecha digital.<br/><br>
+				<input type="radio" name="r6" id="r6" value="0"/> Facilitar la monopolización por parte de grandes empresas.<br/><br>
+				<input type="radio" name="r6" id="r6" value="1"/> Unificar las tecnologías de la información y la comunicación (TIC) para eliminar barreras y mejorar la experiencia del usuario.<br/><br>
+				<input type="radio" name="r6" id="r6" value="0"/>Limitar el acceso a la información y la comunicación.<br/><br><br>
+				<!-- Pregunta 7 -->
+				<li>¿Cuál fue un desarrollo clave durante la década de 1990 que contribuyó a la convergencia digital?</li><br>
+				<input type="radio" name="r7" id="r7" value="1"/>El lanzamiento de la World Wide Web y la explosión de Internet.<br/><br>
+				<input type="radio" name="r7" id="r7" value="0"/>La proliferación de dispositivos móviles.<br/><br>
+				<input type="radio" name="r7" id="r7" value="0"/>La popularización de los servicios de streaming<br/><br>
+				<input type="radio" name="r7" id="r7" value="0"/>El surgimiento de las redes sociales.<br/><br><br>
+				<!-- Pregunta 8 -->
+				<li>¿Cuál es uno de los beneficios de los gemelos digitales?</li><br>
+				<input type="radio" name="r8" id="r8" value="0"/>Aumento de la brecha digital<br/><br>
+				<input type="radio" name="r8" id="r8" value="0"/>Reducción de la innovación en el campo de la medicina.<br/><br>
+				<input type="radio" name="r8" id="r8" value="0"/>Limitación de la innovación en el campo de la medicina.<br/><br>
+				<input type="radio" name="r8" id="r8" value="1"/>Monitorización y análisis del comportamiento de objetos físicos en tiempo real.<br/><br><br><br>
+				<!-- Pregunta 9-->
+				<li>¿Cuál fue una innovación tecnológica clave durante la primera década del siglo XXI que aceleró la convergencia digital?</li><br>
+				<input type="radio" name="r9" id="r9" value="0"/>La popularización de la inteligencia artificial.<br/><br>
+				<input type="radio" name="r9" id="r9" value="0"/>El desarrollo de la realidad virtual.<br/><br>
+				<input type="radio" name="r9" id="r9" value="0"/>La introducción de la computación en la nube.<br/><br>
+				<input type="radio" name="r9" id="r9" value="1"/>La proliferación de dispositivos móviles y tecnologías inalámbricas como el Wi-Fi y el Bluetooth.<br/><br><br>
+				<!-- Pregunta 10 -->
+				<li>¿Cuál es uno de los objetivos de los gemelos digitales?</li><br>
+				<input type="radio" name="r10" id="r10" value="0"/>Replicar la brecha digital en el mundo digital.<br/><br>
+				<input type="radio" name="r10" id="r10" value="1"/>Mejorar la toma de decisiones y la planificación estratégica mediante la simulación de escenarios y el análisis de variables.<br/><br>
+				<input type="radio" name="r10" id="r10" value="0"/> Limitar el acceso a la información y la comunicación.<br/><br>
+				<input type="radio" name="r10" id="r10" value="0"/>Facilitar la monopolización por parte de grandes empresas. <br/>
+			</ul>
+		</form>
+		</div>
+			<input type="button" value="Calificar" onclick="califica()">
+			<p></p>
+			<p id="total">   </p>
+			<p id="comentario">   </p>
+			<input type="button" onclick="generar()" value="Ver preguntas y respuestas"/> <br/>
+			<iframe frameborder="0" width="800" height="700"></iframe>
+		</div>
+	</section>
+			
+</body>
+    <footer>
+        <center>
+        <p>Copyright © 2023 Gemelos Digitales. Todos los derechos reservados.</p>
+        <p>Creado por David Campos Morado y Osteguin Noyola Diego Alejandro </p> 
+        </center>
+    </footer>
+</html>
